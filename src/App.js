@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      <Header />
       <Footer />
     </div>
   )
