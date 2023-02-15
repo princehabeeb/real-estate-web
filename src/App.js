@@ -1,13 +1,21 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import PropertyDetails from './pages/PropertyDetails';
 
 
-import { Routes, Route } from 'react-router-dom'
+
+
 const App = () => {
   return (
-    <div>
+    <div className='max-w-[1140px] mx-auto'>
       <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/property/:id' element={<PropertyDetails />} />
+      </Routes>
       <Footer />
     </div>
   )
