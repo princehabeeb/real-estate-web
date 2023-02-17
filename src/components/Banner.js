@@ -20,7 +20,8 @@ const Banner = () => {
               </p>
            </div>
            {/* images */}
-           <div className='hidden flex-1 lg:flex'>
+           <div className='hidden flex-1 lg:flex justify-end
+           items-end'>
             <img src={Image} alt="" />
            </div>
        </div>
