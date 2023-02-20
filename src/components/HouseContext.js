@@ -9,10 +9,23 @@ const HouseContextProvider = ({ children }) => {
   const [countries, setCountries] = useState([]);
   const [property, setProperty] = useState('property type (any)');
   const [properties, setProperties] = useState([]);
+  const [price, setPrice] = useState('prince range (any)');
+  const [loading, setLoading] = useState(false);
 
 
   return (
-     <HouseContext.Provider value={''} > 
+     <HouseContext.Provider value={{
+      country,
+      setCountries,
+      countries,
+      property,
+      setProperty,
+      properties,
+      price,
+      setPrice,
+      houses,
+      loading
+     }} > 
      {children} 
      </HouseContext.Provider>
   );
