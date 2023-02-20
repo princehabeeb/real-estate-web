@@ -8,6 +8,7 @@ const HouseContextProvider = ({ children }) => {
   const [country, setCountry] = useState('Location (any)');
   const [countries, setCountries] = useState([]);
   const [property, setProperty] = useState('property type (any)');
+  const [properties, setProperties] = useState([]);
 
 
   return (
