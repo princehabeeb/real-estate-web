@@ -8,7 +8,7 @@ import { HouseContext } from './HouseContext';
 
 
 const Search = () => {
-  const {houses} = useContext(HouseConext);
+  
   
 
   return (
