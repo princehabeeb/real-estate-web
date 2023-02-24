@@ -14,6 +14,10 @@ const CountryDropdown = () => {
   return <Menu as='div' className='dropdown relative' >
     <Menu.Button>
       <RiMapPinLine className='dropdown-icon-primary' />
+      <div>
+        <div>{country}</div>
+        <div>Select your place</div>
+      </div>
     </Menu.Button>
   </Menu>;
 };
