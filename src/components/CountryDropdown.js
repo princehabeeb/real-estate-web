@@ -11,7 +11,11 @@ const CountryDropdown = () => {
    
    const [isOpen, setIsOpen] = useState(false);
 
-  return <div>CountryDropdown</div>;
+  return <Menu as='div' className='dropdown relative' >
+    <Menu.Button>
+      <RiMapPinLine className='dropdown-icon-primary' />
+    </Menu.Button>
+  </Menu>;
 };
 
 export default CountryDropdown;
