@@ -13,6 +13,13 @@ const HouseContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
 
 
+
+  useEffect(() => {
+    const allCountries = houses.map((house) => {
+      return house.country;
+    });
+  });
+  
   return (
      <HouseContext.Provider value={{
       country,
