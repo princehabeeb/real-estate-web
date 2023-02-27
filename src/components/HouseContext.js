@@ -18,6 +18,7 @@ const HouseContextProvider = ({ children }) => {
     const allCountries = houses.map((house) => {
       return house.country;
     });
+    console.log(allCountries);
   });
   
   return (
