@@ -18,8 +18,10 @@ const HouseContextProvider = ({ children }) => {
     const allCountries = houses.map((house) => {
       return house.country;
     });
-    console.log(allCountries);
-  });
+   
+    const uniqueCountries = ['Location (any)', ...new Set(allCountries)];
+     setCountries(uniqueCountries);
+  }, []);
   
   return (
      <HouseContext.Provider value={{
