@@ -29,7 +29,7 @@ const HouseContextProvider = ({ children }) => {
     });
    
     const uniqueProperties = ['Location (any)', ...new Set(allProperties)];
-     setCountries(uniqueProperties);
+     setProperties(uniqueProperties);
   }, []);
   
   return (
