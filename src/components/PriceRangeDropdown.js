@@ -6,7 +6,7 @@ import { HouseContext } from './HouseContext';
 
 
 const PriceRangeDropdown = () => {
-  const { property, setProperty, properties } =
+  const { price, setPrice } =
    useContext(HouseContext);
 
    
@@ -19,7 +19,7 @@ const PriceRangeDropdown = () => {
         <div className='text-[15px] font-medium leading-tight'>
           {property}
           </div>
-        <div className='text-[13px]'>Select your place</div>
+        <div className='text-[13px]'>Choose price range</div>
       </div>
       {
           isOpen ? (
