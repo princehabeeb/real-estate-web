@@ -5,7 +5,7 @@ import { HouseContext } from './HouseContext';
 
 
 
-const PropertyDropdown = () => {
+const PriceRangeDropdown = () => {
   const { property, setProperty, properties } =
    useContext(HouseContext);
 
@@ -44,4 +44,4 @@ const PropertyDropdown = () => {
   </Menu>;
 };
 
-export default PropertyDropdown;
+export default PriceRangeDropdown;
