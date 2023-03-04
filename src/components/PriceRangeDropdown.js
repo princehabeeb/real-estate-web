@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { RiHome5Line, RiArrowDownSLine, RiArrowUpSLine} from 'react-icons/ri';
+import { RiWallet3Line, RiArrowDownSLine, RiArrowUpSLine} from 'react-icons/ri';
 import { Menu } from '@headlessui/react';
 import { HouseContext } from './HouseContext';
 
@@ -14,7 +14,7 @@ const PriceRangeDropdown = () => {
 
   return <Menu as='div' onClick={() => setIsOpen(!isOpen)} className='dropdown relative' >
     <Menu.Button className='dropdown-btn w-full text-left'>
-      <RiHome5Line className='dropdown-icon-primary' />
+      <RiWallet3Line className='dropdown-icon-primary' />
       <div>
         <div className='text-[15px] font-medium leading-tight'>
           {property}
