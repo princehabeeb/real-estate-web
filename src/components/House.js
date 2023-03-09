@@ -2,7 +2,17 @@ import React from 'react';
 import { BiBed, BiBath, BiArea } from 'react-icons/bi';
 
 const House = ({house}) => {
-  return <div>House</div>;
+  const { image, type, country, address, bedrooms, bathrooms,
+  surface, price } = house;
+  return (
+  <div>
+   <img src={image} alt="" />
+   <div>
+    <div> {type}</div>
+    <div> {country}</div>
+   </div>
+    </div>
+    );
 };
 
 export default House;
