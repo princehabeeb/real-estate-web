@@ -13,8 +13,35 @@ const House = ({house}) => {
     <div className='bg-green-500 rounded-full text-white px-3'> 
     {type}</div>
     <div className='bg-violet-500 rounded-full text-white px-3'> 
-      {country}</div>
+      {country}
+      </div>
    </div>
+   <div className='text-lg font-semibold max-w-[260px]'>
+    {address}
+    </div>
+    <div className='flex gap-x-4 my-4'>
+      <div className='flex items-center text-gray-600 gap-1'>
+        <div className=''> 
+          <BiBed />
+        </div>
+        <div className='text=[20px]'>{bedrooms}</div>
+        </div>
+        <div className='flex items-center text-gray-600 gap-1'>
+        <div className=''> 
+          <BiBath />
+        </div>
+        <div className='text=[20px]'>{bathrooms}</div>
+        </div>
+        <div className='flex items-center text-gray-600 gap-1'>
+        <div className=''> 
+          <BiArea />
+        </div>
+        <div className='text=[20px]'>{surface}</div>
+        </div>
+    </div>
+     <div className='text-lg font-semibold text-violet-600 mb-4'>
+      {price}
+      </div>
     </div>
     );
 };
