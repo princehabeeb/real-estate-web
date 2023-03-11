@@ -33,8 +33,13 @@ const HouseContextProvider = ({ children }) => {
   }, []);
 
   const handleClick = () => {
-    console.log(country, property);
-  }
+    // console.log(country, property, price);
+
+    const isDefault = (str) => {
+      return str.split(' ').includes('(any)');
+    };
+    const minPrice = (parseInt(price.split('')[0]));  
+  };
   
   return (
      <HouseContext.Provider value={{
