@@ -68,7 +68,10 @@ const HouseContextProvider = ({ children }) => {
           }
         }
         if (!isDefault(country) && !isDefault(property) && isDefault(price)){
-          return house.country = country;
+          return house.country = country && house.type === property;
+        }
+        if (!isDefault(country) && !isDefault(price) &&  isDefault(property)){
+          return house.country = country && house.type === property;
         }
     });
     console.log(newHouses); 
