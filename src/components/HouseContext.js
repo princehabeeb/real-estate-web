@@ -71,7 +71,10 @@ const HouseContextProvider = ({ children }) => {
           return house.country = country && house.type === property;
         }
         if (!isDefault(country) && !isDefault(price) &&  isDefault(property)){
-          return house.country = country && house.type === property;
+          if (housePrice >= minPrice && housePrice <= maxPrice){
+          return house.country === country;
+          }
+          
         }
     });
     console.log(newHouses); 
