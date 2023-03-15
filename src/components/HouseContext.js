@@ -33,7 +33,7 @@ const HouseContextProvider = ({ children }) => {
   }, []);
 
   const handleClick = () => {
-    // console.log(country, property, price);
+   setLoading(true);
 
     const isDefault = (str) => {
       return str.split(' ').includes('(any)');
@@ -80,8 +80,14 @@ const HouseContextProvider = ({ children }) => {
           if (housePrice >= minPrice && housePrice <= maxPrice){
           return house.type === property;
           }
+        }
     });
-    console.log(newHouses); 
+    // console.log(newHouses); 
+    setTimeout(() => {
+      return newHouses.length < 1 ? setHouses([]) : 
+      setHouses(newHouses); 
+      setLoading(false);
+    }, 1000);
   };
   
   return (
