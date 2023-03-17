@@ -14,7 +14,7 @@ const HouseList = () => {
   }
 
   if (houses.length < 1) {
-    return <div>Sorry, nothing found</div>
+    return <div>Sorry, nothing is found</div>
   }
 
 
