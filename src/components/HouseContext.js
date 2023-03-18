@@ -76,7 +76,7 @@ const HouseContextProvider = ({ children }) => {
           }
           
         }
-        if (!isDefault(country) && !isDefault(price) &&  !isDefault(property)){
+        if (isDefault(country) && !isDefault(price) &&  !isDefault(property)){
           if (housePrice >= minPrice && housePrice <= maxPrice){
           return house.type === property;
           }
@@ -85,7 +85,7 @@ const HouseContextProvider = ({ children }) => {
     // console.log(newHouses); 
     setTimeout(() => {
       return newHouses.length < 1 ? setHouses([]) : 
-      setHouses(newHouses); 
+      setHouses(newHouses),
       setLoading(false);
     }, 1000);
   };

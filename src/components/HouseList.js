@@ -14,7 +14,9 @@ const HouseList = () => {
   }
 
   if (houses.length < 1) {
-    return <div>Sorry, nothing is found</div>
+    return <div className='text-center text-3xl text-gray-400 mt-48'>
+      Sorry, nothing is found
+      </div>
   }
 
 
