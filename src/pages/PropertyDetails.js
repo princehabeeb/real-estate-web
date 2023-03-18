@@ -55,15 +55,28 @@ const PropertyDetails = () => {
       </div>
       <div className='flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg
       px-6 py-8 '>
-        <div className='flex items-center'>
-          <div>
+        <div className='flex items-center gap-x-4 mb-8'>
+          <div className='w-20 h-20 p-1 border border-gray-300 rounded-full'>
             <img src={house.agent.image} alt="" />
           </div>
           <div>
+          <div className='font-bold text-lg'>
             {house.agent.name}
           </div>
           <Link to='' className='text-violet-700 text-sm'>View Listings</Link>
         </div>
+        </div>
+        <form>
+          <input className='border border-gray-300 focus:border-violet-700
+          outline-none' type="text" />
+          <input type="text" />
+          <input type="text" />
+          <textarea ></textarea>
+          <div>
+            <button>Send message</button>
+            <button>Call</button>
+          </div>
+        </form>
       </div>
     </div>
     </div>
