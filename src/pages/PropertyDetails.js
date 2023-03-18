@@ -32,10 +32,16 @@ const PropertyDetails = () => {
         $ {house.price}
         </div>
     </div>
-    <div>
+    <div className='flex flex-col items-start gap-8 lg:flex-row'>
       <div className='max-w-[768px]'>
         <div className=' mb-8'>
           <img src={house.imageLg} alt="" />
+        </div>
+        <div>
+          <div>
+            <BiBed />
+            <div>{house.bedrooms}</div>
+          </div>
         </div>
       </div>
     </div>
