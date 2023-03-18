@@ -66,15 +66,27 @@ const PropertyDetails = () => {
           <Link to='' className='text-violet-700 text-sm'>View Listings</Link>
         </div>
         </div>
-        <form>
+        <form className='flex flex-col gap-y-4'>
           <input className='border border-gray-300 focus:border-violet-700
-          outline-none' type="text" />
-          <input type="text" />
-          <input type="text" />
-          <textarea ></textarea>
-          <div>
-            <button>Send message</button>
-            <button>Call</button>
+          outline-none rounded w-full px-4 h-14 text-sm' type="text" placeholder='Name*' />
+          <input className='border border-gray-300 focus:border-violet-700
+          outline-none rounded w-full px-4 h-14 text-sm'
+          type="email"  placeholder='Email*'/>
+          <input className='border border-gray-300 focus:border-violet-700
+          outline-none rounded w-full px-4 h-14 text-sm'
+          type="phone" placeholder='Phone*' />
+          <textarea className='border border-gray-300 focus:border-violet-700
+          outline-none resize-none rounded w-full p-4 h-36 text-sm text-gray-400'
+          placeholder='Message*' defaultValue='Hello, I am interested'>
+
+          </textarea>
+          <div className='flex gap-x-2'>
+            <button className='bg-violet-700 hover:bg-violet-800 text-white rounded p-4
+            text-sm w-full transition'>
+              Send message</button>
+            <button className='border  border-violet-700 text-violet-700 p-4 text-sm w-full
+            hover:border-violet-500 hover:text-violet-500 rounded transition'>
+              Call</button>
           </div>
         </form>
       </div>
